@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="http://thisisnotajumpscare.com/images/favicon.ico">
+<link rel="stylesheet" href="style.css">
+
+<title>Bu bir jumpscare değil.</title>
+</head>
+
+<body>
+<div id="container"><div id="text"></div></div>
+
+<script>
+var cards = new Array ();
+cards = [
+		"Bu sitede korkutucu bir şey yok.",
+		"Gerçekten yok.",
+		"Endişelenme.",
+		"Bu sadece bir yazı.",
+        "Sana herhangi bir şey yapamaz.",
+		"Güven bana.",
+		"Bu site iyi niyetli.",
+		"Huzurlu ve rahat bir şekilde yazıları oku.",
+		"Seni korkutmayacağım.",
+		"Endişelenme.",
+		"Artık tamamen samimiyim.",
+		"Seni korkutamayacak kadar çok saygı duyuyorum, sadece eğlencem için.",
+		"Bu yüzden hiç endişelenme.",
+		"Lütfen.",
+		"Rahatla.",
+        "Gördün mü?",
+        "Korkutucu hiçbir şey yok.",
+        "Eğer korkutmak isteseydim çoktan korkuturdum.",
+        "Ama dediğim gibi bu sitede korkutucu hiçbir şey yok.",
+        "Sana rahatlaman için biraz süre tanıyacağım.",
+        "...",
+        "...",
+        "...",
+        "...",
+        "Umarım daha iyi hissediyorsundur.",
+        "Buraya kadar okuduğun için teşekkürler.",
+        "Sana bir sürprizim var...",
+        "Hahahh şaka yapıyorum.",
+        "Bu sitede hiç korkutucu bir şey yok.",
+        "Oh, kusura bakma gitmek zorundayım.",
+        "Sonra görüşürüz dostum.",
+        "#technobladeneverdies",
+        "#legendsneverdie",
+        "o7"
+];
+  
+var b = -1;
+var currentText;  
+
+ function cardCounter(){
+   	b++;
+	if (b < cards.length){
+		currentText = cards[b];
+		document.getElementById("text").innerHTML = currentText;
+  	} else {
+		b = -1;
+		clearInterval(intervalTimer);
+	};  
+  };
+
+var intervalTimer = setInterval(function(){cardCounter()},4000);
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55866702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

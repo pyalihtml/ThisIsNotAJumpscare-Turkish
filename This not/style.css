@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #212020;		
+	color: #EDEDED;
+	font-family: 'Times New Roman', Times, serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	user-select: none;
+	text-align: center;
+}
+
+div#container {
+	width: 700px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+div#text {
+	position: absolute;
+	top: 44%;
+	width: 699px;
+}
+
+a {
+	color: #2D440F;
+	text-decoration: none;
+}
